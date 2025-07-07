@@ -23,8 +23,10 @@ export default function Navbar() {
         </div>
         <div className="nav-links">
           <Link href="/services" className={pathname === '/services' ? 'active' : ''}>Services</Link>
-          <Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact Us</Link>
           <Link href="/about" className={pathname === '/about' ? 'active' : ''}>About Us</Link>
+          <Link href="/whatwedo" className={pathname === '/whatwedo' ? 'active' : ''}>What We Do</Link>
+          <Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact Us</Link>
+          
         </div>
       </div>
     </nav>

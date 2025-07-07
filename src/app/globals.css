@@ -24,14 +24,35 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Navbar Styling */
 
 .navbar{
   background-color: black;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 4.3rem;
 }
 .nav-container {
   display: flex;
@@ -43,7 +64,7 @@ a {
 .img h2{
   color: whitesmoke;
   font-weight: 900;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 .img{
   display: flex;
@@ -65,7 +86,7 @@ a {
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.1rem;
 }
 
@@ -97,52 +118,66 @@ a {
 /* footer Section Styling */
 
 .footer {
-  background-color: #2e2e2e;
+  background-color: #3b3b3b;
   color: #f0f0f0;
-  padding: 4rem 2rem;
+  padding: 10px;
+
 }
 
 .footer-container {
-  max-width: 100%;
-  height: 9rem;
-  margin: 0 auto;
-  display: grid;
-  gap: 1.5rem;
+  display: flex;
+  width: 100%;
+  height: 15rem;
+  gap: 1rem;
 }
 
 .footer h2 {
-  margin-top: 0px;
   font-size: 2.2rem;
   font-weight: 700;
+
+}
+.part1 h2{
+  margin-top: 1.5rem;
   text-align: center;
 }
 
-.footer-nav {
+.part2 {
+  width: 20%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 0.5rem;
   list-style: none;
   padding: 0;
 }
-
-.footer-nav a {
+.part2 h2{
+  margin-left: 1.7rem;
+}
+.part2 a {
   color: #f0f0f0;
+  margin-left: 1.8rem;
   text-decoration: none;
   position: relative;
+  transition: color 0.3s ease;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
-.footer-nav a::after {
-  content: "";
+.part2 a::after {
+  content: '';
   position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
+  bottom: -5px;
   left: 0;
-  background: #f0f0f0;
+  width: 0%;
+  height: 2.5px;
+  background-color: #f0f0f0;
   transition: width 0.3s ease;
 }
+.part2 a:hover {
+  color: rgb(189, 186, 186);
+}
 
-.footer-nav a:hover::after {
+.part2 a:hover::after {
   width: 100%;
 }
 
@@ -153,8 +188,18 @@ a {
 }
 
 .footer-social a {
+  margin-top: 2.6rem;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color:rgb(41, 37, 37);
   color: #f0f0f0;
-  font-size: 1.2rem;
+  font-weight: 500;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -163,8 +208,53 @@ a {
   transform: translateY(-2px);
 }
 
-.footer-copy {
-  font-size: 0.9rem;
-  opacity: 0.7;
+
+.part1{
+  width: 20%;
+  height: 100%;
 }
+
+
+.part3 {
+  width: 60%;
+  height: 100%;
+}
+.wwd{
+  width: 6.5rem;
+}
+.ql{
+  width: 4.9rem;
+}
+
+.part3 h2{
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+.services{
+  margin-left: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ 3 columns */
+  max-width: 500px;
+  gap: 1rem;;
+}
+.services a{
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1.1rem;
+  font-weight: 500;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
