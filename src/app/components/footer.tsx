@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="part2">
           <h2>Quick Links</h2>
             <a className="ql" href="/services">Services</a>
-            <a className="ql" href="/about">About Us</a>
+            <a className="ql" href="./pages/aboutus">About Us</a>
             <a  className="wwd" href="/whatwedo">What We Do</a>
             <a className="ql" href="/contact">Contact</a>
             

@@ -1,4 +1,6 @@
 import './globals.css';
+import './style/aboutus.css';
+import './style/contact.css';
 import Navbar from './components/nav_bar';
 import Footer from './components/footer';
 export const metadata = {

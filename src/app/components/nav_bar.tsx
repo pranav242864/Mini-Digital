@@ -27,7 +27,7 @@ export default function Navbar() {
         {/* Nav Links */}
         <div className="nav-links flex items-center gap-7 text-sm font-medium text-gray-800">
           <Link
-            href="/about"
+            href="/pages/aboutus"
             className={`hover:text-black transition ${pathname === '/about' ? 'text-black font-semibold active' : ''}`}
           >
             About Us
@@ -39,6 +39,7 @@ export default function Navbar() {
           >
             What We Do
           </Link>
+          <Link href="\pages\contact">contact</Link>
 
           {/* Colaborators Dropdown */}
           <div className="relative group cursor-pointer">
@@ -97,14 +98,7 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-
-          <Link
-            href="/contact"
-            className={`hover:text-black transition ${pathname === '/contact' ? 'text-black font-semibold active' : ''}`}
-          >
-            Contact Us
-          </Link>
-        </div>
+       </div>
       </div>
     </nav>
   );
